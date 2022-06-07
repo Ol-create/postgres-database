@@ -13,19 +13,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Oluyemi Paul**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- [GitHub: Ol-create](https://github.com/Ol-create)
+- [Twitter: OluyemiPaul99](https://twitter.com/OluyemiPaul99)
+- [LinkedIn: paul-oluyemi-193966ab](https://www.linkedin.com/in/paul-oluyemi)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
