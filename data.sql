@@ -17,4 +17,6 @@ VALUES ('Charmander', '08-02-2020', -11, TRUE, 0),
        ('Blossom', '13-10-1998', 17, TRUE, 3), 
        ('Ditto', '14-05-2022', 22, TRUE, 4);
 
+/* Rename column species TO unspecified */
+ALTER TABLE animals RENAME COLUMN species TO unspecified;
   
