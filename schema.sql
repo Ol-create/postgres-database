@@ -10,3 +10,9 @@ CREATE TABLE animals
   
  /* Add a column species of type string */ 
 ALTER TABLE animals ADD COLUMN species VARCHAR(225);
+
+/* Create owners table */
+CREATE TABLE owners
+  (id SERIAL PRIMARY KEY, 
+  full_name VARCHAR(225), 
+   age INT);
