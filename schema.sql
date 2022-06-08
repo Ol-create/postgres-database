@@ -15,4 +15,10 @@ ALTER TABLE animals ADD COLUMN species VARCHAR(225);
 CREATE TABLE owners
   (id SERIAL PRIMARY KEY, 
   full_name VARCHAR(225), 
-   age INT);
+  age INT);
+   
+/* Create species table */
+CREATE TABLE species
+  (id SERIAL PRIMARY KEY, 
+  name VARCHAR(225));
+   
