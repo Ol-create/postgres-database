@@ -24,5 +24,8 @@ SELECT * FROM animals WHERE name != 'Gabumon';
 /* Find all animals with a weight between 10.4kg and 17.3kg */
 SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
-/* No of animal in the table */
+/* No of animal in the table = 11 */
 SELECT COUNT(name) FROM animals;
+
+/* No of animals that did not attempt escaping = 2 */
+SELECT COUNT (name) FROM animals WHERE escape_attempts = 0;
