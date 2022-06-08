@@ -29,3 +29,6 @@ SELECT COUNT(name) FROM animals;
 
 /* No of animals that did not attempt escaping = 2 */
 SELECT COUNT (name) FROM animals WHERE escape_attempts = 0;
+
+/* Average weight of animals */
+ SELECT AVG (weight_kg) FROM animals;
