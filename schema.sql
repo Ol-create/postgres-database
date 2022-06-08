@@ -7,6 +7,6 @@ CREATE TABLE animals
   escape_attempts INT, 
   neutered BOOLEAN, 
   weight_kg NUMERIC);
-   
-  /* Track data for backup */
-  BEGIN TRANSACTION;
+  
+ /* Add a column species of type string */ 
+ALTER TABLE animals ADD COLUMN species VARCHAR(225);
