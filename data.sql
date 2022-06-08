@@ -51,3 +51,12 @@ ROLLBACK jan_2022;
 /* Update all animals' weights that are negative to be their weight multiplied by -1. */
 UPDATE animals SET weight_kg = weight_kg* -1 WHERE weight_kg <0;
 COMMIT TRANSACTION;
+
+/* Insert data into owners table*/
+INSERT INTO owners (full_name, age) 
+VALUES ('Sam Smith', 34), 
+       ('Jennifer Orwell', 19), 
+       ('Bob', 45), 
+       ('Melody Pond', 77), 
+       ('Dean Winchester', 14), 
+       ('Jodie Whittaker', 38);
