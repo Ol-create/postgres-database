@@ -39,3 +39,5 @@ FROM animals
 GROUP BY neutered
 ORDER BY sum DESC
 LIMIT 1;
+/* minimum and maximum weight of each type of animal */
+SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
