@@ -8,3 +8,5 @@ VALUES ('Agumon', '3-2-2020', 0, true, 10.23),
        
 /* Start transaction; */
 BEGIN TRANSACTION;
+/* Update species record with digimon */
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
