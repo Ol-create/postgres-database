@@ -12,3 +12,6 @@ BEGIN TRANSACTION;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 /* Update the remaining species record with pokemon */
 UPDATE animals SET species = 'pokemon' WHERE name NOT LIKE '%mon';
+/* Save transaction */
+COMMIT TRANSACTION;
+
