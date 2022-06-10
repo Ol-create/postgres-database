@@ -21,4 +21,9 @@ CREATE TABLE owners
 CREATE TABLE species
   (id SERIAL PRIMARY KEY, 
   name VARCHAR(225));
+  
+/* Alter table animals remove column species */
+ALTER TABLE animals DROP COLUMN species;
    
+/* Add primary key to id */
+ALTER TABLE animals ADD PRIMARY KEY(id);
