@@ -75,3 +75,10 @@ UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Gabumon','Pi
 UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Devimon','Plantmon') AND owners.full_name= 'Bob';
 UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Charmander','Squirtle', 'Blossom') AND owners.full_name= 'Melody Pond';
 UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Angemon','Boarmon') AND owners.full_name= 'Dean Winchester';
+
+-- Add vets
+INSERT INTO public.vets ("name",age,date_of_graduation) VALUES
+	 ('William Tatcher',45,'2000-04-23'),
+	 ('Maisy Smith',26,'2019-01-17'),
+	 ('Stephanie Mendez',64,'1981-05-04'),
+	 ('Jack Harkness',38,'2008-06-08');
