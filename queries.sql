@@ -67,3 +67,13 @@ SELECT name FROM animals WHERE owner_id = (SELECT id FROM owners WHERE full_name
 
 -- Who owns the most animals?
 SELECT full_name, COUNT(*) FROM owners LEFT JOIN animals ON owners.id = animals.owner_id GROUP BY full_name ORDER BY COUNT(*) DESC LIMIT 1;
+
+
+-- QUERIES USING JOIN TABLES
+-- Who was the last animal seen by William Tatcher?
+SELECT animals.name FROM vets 
+  JOIN visits ON vets.id = visits.vets_id
+  JOIN animals ON animals.id = visits.animals_id
+  WHERE vets.name = 'William Tatcher'
+  ORDER BY visits.date_of_visit DESC
+  LIMIT 1;
