@@ -82,3 +82,8 @@ SELECT animals.name FROM vets
 SELECT COUNT(*) as num_animals_visited from vets
 	JOIN visits ON vets.id = visits.vets_id
 	WHERE vets.name = 'Stephanie Mendez';
+
+-- List all vets and their specialties, including vets with no specialties.
+SELECT vets.name, species.name as specialized_in FROM vets
+	LEFT JOIN specializations ON specializations.vets_id = vets.id
+	LEFT JOIN species ON specializations.species_id = species.id;
