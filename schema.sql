@@ -27,3 +27,7 @@ ALTER TABLE animals DROP COLUMN species;
    
 /* Add primary key to id */
 ALTER TABLE animals ADD PRIMARY KEY(id);
+
+/* Add column species_id which is a foreign key referencing species table */
+ALTER TABLE animals ADD COLUMN species_id INT;
+ALTER TABLE animals ADD FOREIGN KEY(species_id) REFERENCES species(id);
