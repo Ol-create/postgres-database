@@ -35,3 +35,11 @@ ALTER TABLE animals ADD FOREIGN KEY(species_id) REFERENCES species(id);
 /* Add column owner_id which is a foreign key referencing the owners table */
 ALTER TABLE animals ADD COLUMN owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
+
+-- VETS
+CREATE TABLE vets (
+    id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name text,
+    age integer,
+    date_of_graduation date
+);
