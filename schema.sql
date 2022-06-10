@@ -43,3 +43,13 @@ CREATE TABLE vets (
     age integer,
     date_of_graduation date
 );
+CREATE UNIQUE INDEX vets_pkey ON vets(id int4_ops);
+
+-- Join table specializations
+CREATE TABLE specializations (
+    vets_id integer REFERENCES vets(id) ON DELETE CASCADE,
+    species_id integer REFERENCES species(id) ON DELETE CASCADE,
+    CONSTRAINT specializations_pkey PRIMARY KEY (vets_id, species_id)
+);
+
+CREATE UNIQUE INDEX specializations_pkey ON specializations(vets_id int4_ops,species_id int4_ops);
