@@ -49,3 +49,6 @@ SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth >= '01-01-
 -- QUERIES USING JOIN
 -- What animals belong to Melody Pond?
 SELECT name FROM animals WHERE owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond');
+
+-- List of all animals that are pokemon (their type is Pokemon).
+SELECT name FROM animals WHERE species_id = (SELECT id FROM species WHERE name = 'Pokemon');
