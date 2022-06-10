@@ -64,3 +64,7 @@ VALUES ('Sam Smith', 34),
 /* Insert date into species table */
 INSERT INTO species (name) 
 VALUES ('Pokemon'), ('Digimon');
+
+/* Alter table animals remove column species */
+ALTER TABLE animals DROP COLUMN species;
+
