@@ -69,3 +69,9 @@ VALUES ('Pokemon'), ('Digimon');
 UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
 UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
 
+/* Modify your inserted animals to include owner information (owner_id) */
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name = 'Agumon' AND owners.full_name= 'Sam Smith' ;
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Gabumon','Pikachu') AND owners.full_name= 'Jennifer Orwell';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Devimon','Plantmon') AND owners.full_name= 'Bob';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Charmander','Squirtle', 'Blossom') AND owners.full_name= 'Melody Pond';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Angemon','Boarmon') AND owners.full_name= 'Dean Winchester';
