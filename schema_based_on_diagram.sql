@@ -41,6 +41,12 @@ CREATE TABLE "invoice_items"(
     "invoice_id" INTEGER NOT NULL,
     "treatment_id" INTEGER NOT NULL
 );
+CREATE TABLE "medical_treatments"(
+"medical_id" INTEGER NOT NULL,
+"treatment_id" INTEGER NOT NULL,
+CONSTRAINT fk_medical FOREIGN KEY(medical_id) REFERENCES medical_histories(id),
+CONSTRAINT fk_treatment FOREIGN KEY(treatment_id) REFERENCES treatments(id)
+);
 CREATE INDEX "invoice_items_invoice_id_index" ON
     "invoice_items"("invoice_id");
 CREATE INDEX "invoice_items_treatment_id_index" ON
